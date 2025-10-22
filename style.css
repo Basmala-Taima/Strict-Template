@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+  overflow-x: hidden;
+}
+
+.header{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)) , url(images/headerbg.png) ;   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header .nav{
+    background-color:azure ;
+    width:100%;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+}
+.content{
+    width: 80%;
+    margin: auto;
+}
+.header .nav .dark{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(2, 2, 36);
+    margin-top: 20px;
+    margin-left: 3px;
+}
+.header .nav .blue{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 171, 209);
+    margin-top: 20px;
+    margin-left: 3px;
+}
+.header .nav .top{
+    margin-top: 5px;
+}
+.header .nav .ff{
+    float: left;
+    margin-top: 3px;
+}
+.header .nav .ft{
+    float:left ;
+}
+.header .nav h1 {
+    font-size: 35px;
+    color: rgb(2, 2, 36);
+    margin-top: 28px;
+    margin-left: 15px;
+    text-align: center;
+    text-transform:uppercase;
+    float: left;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.header .nav ul{
+    width:45% ;
+    float: right;
+
+}
+
+.header .nav ul li{
+    float: left;
+    padding-left: 10px;
+    margin-right: 20px;
+    margin-top: 28px;
+    list-style-type: none;
+
+}
+.header .nav ul li a{
+    
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgb(2, 2, 36);
+}
+.clearfix {
+    clear: both;
+}
+.header .hero{
+    width: 100%;
+
+    text-align: center;
+    color: aliceblue;
+    font-size: 65px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header .hero hr {
+    border-color: #00a2ff;
+    width: 800px;
+    margin:35px auto 40px
+}
+.header .hero p {
+    font-size: 25px;
+    font-weight: 100;
+    text-transform: lowercase;
+    margin-bottom: 30px;
+}
+.header .hero p span {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.header .hero a{
+    background-color: rgba(0,0,0,0);
+    border:1px solid #00a2ff;
+    color: azure;
+    font-size: 25px;
+    padding:15px 30px ;
+    text-transform: none;
+    border-width:3px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 40px;
+    text-decoration: none;
+}
+.header .hero a:hover{
+    background-color: #00000070;
+}
+.design{
+    width: 100%;
+    height: 350px;    
+    background-color: rgb(240, 239, 239);
+    margin: auto;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.design h2{
+    font-weight: 400;
+    color: rgb(2, 2, 22);
+    padding-top: 70px;
+    font-size: 50px;
+}
+.design p {
+    padding-top: 25px;
+    font-size: 22px;
+    font-weight: 400;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(141, 141, 141);
+    line-height: 0.7cm;
+}
+.icons{
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+}
+.icons h3{
+    color: rgb(6, 6, 57);
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 20px;
+}
+.icons p{
+    color: rgb(156, 153, 153);
+    font-size: 20px;
+    padding-top: 10px;
+    line-height: 0.7cm;
+}
+.icons .icon{
+    width: 31%;
+    float: left;
+    margin: 60px auto;
+}
+.gallary{
+    width: 100%;
+    height: 750px;
+    background-color: rgb(240, 239, 239);
+    text-align: center;
+    position: relative;
+
+}
+
+.gallary h4{
+    color: rgb(3, 3, 47);
+    font-size: 60px;
+    font-weight: 100;
+    padding-top: 70px;
+}
+.gallary p {
+    color: rgb(148, 148, 148);
+    font-size: 20px;
+    font-weight: 100;
+    padding-top: 10px;
+    margin-bottom: 40px;
+}
+.gallary .item{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    text-align: center;
+    margin:20px auto;
+    
+}
+.gallary .item .image{
+    width: calc(100%/3);
+    height: 200px;
+    float: left;
+    margin: 10px auto;
+    position: relative;
+
+}
+.gallary .item .image img{
+    width: 95%;
+    height: 100%;
+}
+.item .image .overlay{
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0;
+    background:linear-gradient(#00a2ffa0 ,#00a2ffb1) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    opacity: 0;
+}
+.item .image .overlay a{
+    background-color: rgba(0,0,0,0);
+    border:1px solid #ffffff;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 15px;;
+    text-transform: none;
+    border-width:3px;
+    font-weight: 500;
+    text-align: center;
+
+    text-decoration: none;
+}
+.item .image:hover .overlay{
+    opacity: 2;
+}
+.form{
+    width: 100%;
+    height: 700px;
+    background:linear-gradient( rgba(10, 25, 47, 0.9),rgba(10, 25, 47, 0.9) ) , url("images/contactbg.png");
+    background-position: center;
+    background-size: cover;
+    color:bisque;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+.div1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.form h4{
+    font-size: 60px;
+    font-weight: 400;
+
+}
+.form p{
+    font-size: 20px;
+    font-weight: 200;
+    color: rgb(132, 132, 132);
+    padding-top: 10px;
+}
+.form form ul{
+    width:100%;
+}
+.form form ul li input{
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 60px;
+    margin-top: 25px;
+    border-color: rgb(148, 148, 148);
+    border-width: 3px;
+}
+
+.form form ul li .textarea{
+    height: 200px;
+    padding-bottom: 100px;
+    text-align: left;
+
+
+}
+.form form ul li .cs{
+    height: 40px;
+    width: 200px;
+    color: aliceblue;
+    font-size: 20px;
+}
+.form form ul li .checkbox{
+    width:17px;
+    height:17px;
+    background-color: rgb(75, 75, 75);
+}
+.form form ul li .send{
+    width: 100px;
+    border-color: #00a2ff;
+    margin-left:200px;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-size: 24px;
+}
+.form form ul li .send:hover{
+    background-color: #00000070;
+}
+
+.footer{
+    width: 100%;
+    height: 100PX;
+    background-color:white ;
+    position: relative;
+}
+.footer P {
+    color: gray;
+    padding-top: 30px;
+    font-size: 30px;
+
+}
+.footer .icons1{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(100%,-50%);
+    float: right;
+}
+.footer .icons1 .social {
+    margin-left: 5px;
+    float: left;
+}
+.footer .icons1 .social i {
+    color: #ffffff;
+    background-color: #00a2ff;
+    padding: 20px;
+    font-size: 40px;
+    margin: 0 auto;
+    text-shadow: 3px 3px 0 #25252d, 1px 1px 0 #25252d;
+}
