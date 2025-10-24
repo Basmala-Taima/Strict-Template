@@ -177,6 +177,7 @@ html, body {
     width: 31%;
     float: left;
     margin: 60px auto;
+    
 }
 .gallary{
     width: 100%;
@@ -286,6 +287,8 @@ html, body {
     margin-top: 25px;
     border-color: rgb(148, 148, 148);
     border-width: 3px;
+    color:rgb(231, 231, 231) ;
+    font-size: 20px;
 }
 
 .form form ul li .textarea{
