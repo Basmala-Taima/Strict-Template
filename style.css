@@ -5,6 +5,7 @@
 }
 html, body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .header{
@@ -175,6 +176,7 @@ html, body {
 }
 .icons .icon{
     width: 31%;
+    height: auto;
     float: left;
     margin: 60px auto;
     
@@ -184,7 +186,7 @@ html, body {
     height: 750px;
     background-color: rgb(240, 239, 239);
     text-align: center;
-    position: relative;
+    /* position: relative; */
 
 }
 
@@ -192,7 +194,7 @@ html, body {
     color: rgb(3, 3, 47);
     font-size: 60px;
     font-weight: 100;
-    padding-top: 70px;
+    padding-top: 50px;
 }
 .gallary p {
     color: rgb(148, 148, 148);
@@ -203,10 +205,10 @@ html, body {
 }
 .gallary .item{
     width: 80%;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 0;
     left: 50%;
-    transform: translate(-50%,-40%);
+    transform: translate(-60%,-40%);
     text-align: center;
     margin:20px auto;
     
@@ -351,4 +353,49 @@ html, body {
     font-size: 40px;
     margin: 0 auto;
     text-shadow: 3px 3px 0 #25252d, 1px 1px 0 #25252d;
+}
+@media (max-width: 500px) {
+    .nav ul {
+        float: none;
+        text-align: center; 
+        padding: 0;
+        margin: 0;
+    }
+
+    .header .hero hr{width: 400px;}
+    .design{
+        height: 420px; 
+    }
+    .design h2{ font-size: 35px;}
+    .icons{height: 550px;}
+    .icon{
+        padding: 0 20px;
+        margin: 0;}
+    .icons h3 {
+        font-size: 20px;
+    }
+    .icons p {
+        font-size: 12px;
+    }
+    .gallary h4{
+        font-size: 30px;
+        
+    }
+}
+@media (min-width:501px) and (max-width:1000px) {
+    .design{
+        height: 420px; 
+    }
+    .design h2{ font-size: 40px;}
+    .icons{height: 510px;}
+    .icon{
+        padding: 0 20px;
+        margin: 0;
+    }
+    .icons h3 {
+            font-size: 20px;
+        }
+    .icons p {
+        font-size: 12px;
+    }
 }
